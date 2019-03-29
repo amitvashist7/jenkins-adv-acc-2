@@ -47,7 +47,7 @@ node {
 
 
     stage('Deploy Code into PROD Env. via Ansible') {
-    sh label: 'ansible', script: 'ansible-playbook -i /root/.jenkins/inve ntory ../../../ansible/demo5/webserver.yaml'
+    sh label: 'ansible', script: 'ansible-playbook -i /root/.jenkins/inventory ../../../ansible/demo5/webserver.yaml'
     }
    }    
    notify('Completed')
